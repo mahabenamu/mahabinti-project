@@ -1,6 +1,9 @@
 body {
   position: relative;
-  margin: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  margin-top:10px;
   padding: 0;
   background-color: #ffe0f6;
   min-height: 100vh; 
@@ -30,11 +33,42 @@ body::before {
     #fffdf7 84px
   );
 }
+@font-face{
+  font-family:"kiwisoda";
+  src:url("KiwiSoda.ttf") format("truetype");
+}
+
+@font-face{
+  font-family:"qaa";
+  src:url("Qaaxee.ttf") format("truetype");
+}
+
+
+p{ margin: 50px;
+  font-size:35px;
+  font-family:"qaa";
+  text-shadow: 2px 3px 0px #2c3e50;
+  color:#ffffff;
+}
 
 h1{
-    margin:20px;
+   padding-left:20px;
     text-align:center;
+    color: rgb(255, 234, 255);
+     text-shadow: 0 0 5px #949494, 0 0 10px #8a8c8c, 0 0 20px #565858;
+  font-size: 130px;
+  font-family:"kiwisoda";
 }
+
+a:link {
+    color: #EFCBD2;
+}
+a:visited {
+    color: #EFCBD2;
+}
+a:hover {
+    color: white;}
+
 
 
 .layout {
@@ -42,23 +76,39 @@ h1{
 
   display: grid;
   grid:
-    "header"4fr
-    "nav" 0.5fr
-    "main" 4fr
-    "footer" 1fr
+    "header" auto
+    "nav" auto
+    "main" auto
+    "footer" auto
     / 1fr;
   gap: 8px;
 }
 
 .header { grid-area: header;
-  border: 10px solid red; 
+  margin:0px;
+  padding:0px;
+  text-align:center;
+
 }
 .nav { grid-area: nav;
-  border: 10px solid red; 
+  margin:0px;
+  padding:0px; 
+  font-size: 50px;
+  font-family:"qaa";
+  color: pink;
+  text-shadow: 4px 4px 0px #2c3e50;
+  text-align:center;
 }
 .main { grid-area: main;
-  border: 10px solid red; 
+  margin:0px;
+  padding:0px; 
+ line-spacing: 2px;
+ background-color:#61585162;
+ border-radius:80px;
 }
 .footer { grid-area: footer; 
-  border: 10px solid red;
+  margin:0px;
+  padding:0px; 
+  border: 3px solid red;
 }
+
